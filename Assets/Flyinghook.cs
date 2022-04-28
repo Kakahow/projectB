@@ -190,7 +190,7 @@ public class Flyinghook : MonoBehaviour
             Vector3 LinePosition1 = m_JointForObject.connectedBody.transform.GetChild(0).transform.localPosition;
             LinePosition1 += rightline;
             worpos1 = m_JointForObject.connectedBody.transform.TransformPoint(LinePosition1);
-            m_Cable.SetPosition(0, this.transform.position);
+            m_Cable.SetPosition(0, this.transform.TransformPoint(0, -0.5f,  0));
             m_Cable.SetPosition(1, worpos1);
             Debug.Log(m_JointForObject.connectedBody.transform.GetChild(0).transform.localPosition + "local");
             Debug.Log(worpos1 + "world");
@@ -199,7 +199,7 @@ public class Flyinghook : MonoBehaviour
             Vector3 LinePosition2 = m_JointForObject2.connectedBody.transform.GetChild(0).gameObject.transform.localPosition;
             LinePosition2 += leftline;
             worpos2 = m_JointForObject2.connectedBody.transform.TransformPoint(LinePosition2);
-            m_Cable2.SetPosition(0, this.transform.position);
+            m_Cable2.SetPosition(0, this.transform.TransformPoint(0,-0.5f,0));
             m_Cable2.SetPosition(1, worpos2);
         }
     }
@@ -208,7 +208,7 @@ public class Flyinghook : MonoBehaviour
     void Update()
     {
         // key control
-        if(Input.GetKey(KeyCode.DownArrow)){
+        /*if(Input.GetKey(KeyCode.DownArrow)){
             this.transform.Translate(0,0, Move_speed * Time.deltaTime);
         }else if(Input.GetKey(KeyCode.UpArrow)){
             this.transform.Translate(0, 0, -Move_speed * Time.deltaTime);
@@ -220,7 +220,7 @@ public class Flyinghook : MonoBehaviour
             this.transform.Translate(0, Move_speed * Time.deltaTime, 0);
         }else if(Input.GetKey(KeyCode.E)){
             this.transform.Translate(0, -Move_speed *Time.deltaTime, 0);
-        }
+        }*/
 
         // endregion
         if(m_JointForObject == null){

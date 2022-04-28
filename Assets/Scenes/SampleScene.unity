@@ -2026,7 +2026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &960162826
 Transform:
   m_ObjectHideFlags: 0
@@ -4671,7 +4671,7 @@ Transform:
   m_LocalScale: {x: 0.009999998, y: 0.009999997, z: 0.009999997}
   m_Children: []
   m_Father: {fileID: 7017776467820837766}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1915142327
 MonoBehaviour:
@@ -5858,7 +5858,6 @@ MonoBehaviour:
   m_Cable1: {fileID: 2118556329}
   m_Cable2: {fileID: 1609110092}
   m_Jib: {fileID: 8469238304819781570}
-  TROLLEY_VELOCITY: 2
   m_Hook: {fileID: 810814010}
 --- !u!54 &2564412645496243733
 Rigidbody:
@@ -6262,7 +6261,6 @@ MonoBehaviour:
   m_Cable1: {fileID: 1150752142}
   m_Cable2: {fileID: 446373704}
   m_Jib: {fileID: 1816716212376483951}
-  TROLLEY_VELOCITY: 2
   m_Hook: {fileID: 422684293}
 --- !u!1 &5939428395854989349
 GameObject:
@@ -6290,14 +6288,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5703841011686203838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0327, z: 0}
+  m_LocalPosition: {x: 0, y: -0.032700006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422684294}
   - {fileID: 1150752141}
   - {fileID: 446373703}
   m_Father: {fileID: 7017776467820837766}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6953535049549820352
 GameObject:
@@ -6357,8 +6355,8 @@ Transform:
   m_LocalPosition: {x: -0.0000367032, y: 0.1639, z: 0.0004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1915142326}
   - {fileID: 5976704112843497641}
+  - {fileID: 1915142326}
   m_Father: {fileID: 7724865119256406906}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
