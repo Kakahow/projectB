@@ -80,7 +80,7 @@ public class TrolleyEntity : MonoBehaviour
     void FixedUpdate()
     {
         
-        if(counter > 0 && counter < 1000f)
+        if(counter > 0 && counter < 1400f)
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -100,7 +100,7 @@ public class TrolleyEntity : MonoBehaviour
                 counter += 1;
             }
         }
-        else if (counter == 1000f)
+        else if (counter == 1400f)
         {
             if (Input.GetKey(KeyCode.DownArrow))
             {

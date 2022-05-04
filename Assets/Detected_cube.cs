@@ -84,5 +84,6 @@ public class Detected_cube : MonoBehaviour
         }else{
             top_cube_detect_conti();
         }
+        PlayerPrefs.SetInt("CubeCount", m_count);
     }
 }

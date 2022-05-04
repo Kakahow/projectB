@@ -10,6 +10,8 @@ public class UI_update : MonoBehaviour
 
     void Update()
     {
-        CubeCount.GetComponent<Text>().text = string.Format("you have achieve <color=yellow>{0}</color> cube!", Detected_cube.m_count); 
+        CubeCount.GetComponent<Text>().text = string.Format("you have achieve <color=yellow>{0}</color> cube!", Detected_cube.m_count);
+
+        
     }
 }
